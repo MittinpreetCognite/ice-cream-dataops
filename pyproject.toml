@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ice-cream-dataops"
+version = "0.1.0"
+description = "Mittin CDF bootcamp Batch 65"
+authors = ["Mittinpreet Singh Nayyar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cognite-toolkit = "^0.3.26"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
