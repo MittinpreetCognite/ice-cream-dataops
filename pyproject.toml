@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 cognite-toolkit = "0.5.30"
+cognite-sdk = "^7.75.2"
+orjson = "^3.10.18"
+guppy3 = "^3.1.5"
 
 
 [build-system]
