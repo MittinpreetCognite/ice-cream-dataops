@@ -25,7 +25,7 @@ Welcome! This repository is your hands-on guide to using Cognite Data Fusion (CD
 
 ---
 ## Few Missing Points to Consider 
-- **Module Selected should contain / in the end of module to capture everything, sometime space will not get created 
+- **Module Selected should contain / in the end of module to capture everything, sometime space will not get created**
 ---
 
 ## 📦 Key Modules in This Repo

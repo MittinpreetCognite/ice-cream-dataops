@@ -77,7 +77,7 @@ modules:
   - name: ice_cream_api
     location:
       path: modules/bootcamp/ice_cream_api
-      hash: 4f91658b
+      hash: b59ef751
     build_variables:
     - key: icapi_ds_external_id
       value: ds_icapi
@@ -166,6 +166,26 @@ modules:
           path: /Users/mittinpreet.nayyar@cognitedata.com/Documents/Coding Practice/Bootcamp-June-25/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/auth/icapi_extractors.Group.yaml
           hash: 90a6f245
         kind: Group
+      workflows:
+      - identifier:
+          externalId: wf_icapi_data_pipeline
+        source:
+          path: /Users/mittinpreet.nayyar@cognitedata.com/Documents/Coding Practice/Bootcamp-June-25/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/workflows/wf_icapi_data_pipeline.WorkFlow.yaml
+          hash: 64fbdbdc
+        kind: Workflow
+      - identifier:
+          externalId: icapi_trigger
+        source:
+          path: /Users/mittinpreet.nayyar@cognitedata.com/Documents/Coding Practice/Bootcamp-June-25/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/workflows/wf_icapi_data_pipeline.WorkFlowTrigger.yaml
+          hash: 4bb02ead
+        kind: WorkflowTrigger
+      - identifier:
+          workflowExternalId: wf_icapi_data_pipeline
+          version: '1'
+        source:
+          path: /Users/mittinpreet.nayyar@cognitedata.com/Documents/Coding Practice/Bootcamp-June-25/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/workflows/wf_icapi_data_pipeline.WorkflowVersion.yaml
+          hash: bd1d8370
+        kind: WorkflowVersion
       functions:
       - identifier:
           externalId: icapi_datapoints_extractor
@@ -258,7 +278,7 @@ modules:
             Cream Factory API/Source.yaml
           hash: ad7e9d3f
         kind: Source
-    warning_count: 2
+    warning_count: 3
     status: Success
     iteration: 1
   - name: data_foundation

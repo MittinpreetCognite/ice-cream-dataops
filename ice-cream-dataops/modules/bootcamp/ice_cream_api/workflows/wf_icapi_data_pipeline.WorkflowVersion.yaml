@@ -1,19 +1,20 @@
 workflowExternalId: wf_icapi_data_pipeline
 version: '1'
 workflowDefinition:
+  description: 'Defining the CDF Bootcamp workflow'
   tasks:
   - externalId: create_asset_hierarchy_task
-    type: function
+    type: transformation
     parameters:
-      function:
+      transformation:
         externalId: create_asset_hierarchy
     retries: 3
     timeout: 3600
     onFailure: abortWorkflow
   - externalId: contextualize_ts_assets_task
-    type: function
+    type: transformation
     parameters:
-      function:
+      transformation:
         externalId: contextualize_ts_assets
     retries: 3
     timeout: 3600
@@ -25,7 +26,7 @@ workflowDefinition:
     parameters:
       function:
         externalId: icapi_datapoints_extractor
-        data: { "hours": 1 }
+        data: {hours: 1}
     retries: 3
     timeout: 3600
     onFailure: abortWorkflow
@@ -35,8 +36,7 @@ workflowDefinition:
     type: function
     parameters:
       function:
-        externalId: icapi_datapoints_extractor
-        data: { "hours": 1 }
+        externalId: oee_timeseries
     retries: 3
     timeout: 3600
     onFailure: abortWorkflow
