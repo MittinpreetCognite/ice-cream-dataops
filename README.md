@@ -3,7 +3,7 @@
 
 # Cognite Bootcamp: Ice Cream DataOps
 
-Welcome! This repository is your hands-on guide to using Cognite Data Fusion (CDF) tools end-to-end. You’ll learn how to onboard data, contextualize assets with timeseries, calculate OEE, orchestrate workflows, and use industrial analytics tools—all with real examples from the Ice Cream API.
+Greetings! This repository serves as your practical, end-to-end guide to working with Cognite Data Fusion (CDF) tools. You’ll explore how to onboard data, contextualize assets with time series, calculate OEE, orchestrate workflows, and leverage industrial analytics tools—using real-world examples from the Ice Cream API.
 
 ---
 
@@ -17,15 +17,16 @@ Welcome! This repository is your hands-on guide to using Cognite Data Fusion (CD
    - A valid CDF `.toml` config file with your project and authentication details
 
 3. **Follow the Steps**
-   - **Data Onboarding:** Connect to the Ice Cream API and ingest data into CDF.
-   - **Data Contextualization:** Link assets with timeseries data for a digital twin.
-   - **OEE Calculation:** Define and compute Overall Equipment Effectiveness (OEE).
-   - **Orchestration:** Automate workflows using CDF Workflows.
-   - **Industrial Tools:** Visualize and analyze your data using CDF’s industrial apps.
+   - **Data Onboarding:** Connect to the Ice Cream API and seamlessly ingest data into CDF.
+	 - **Data Contextualization:** Associate assets with time series data to build a digital twin.
+	 - **OEE Calculation:** Define and calculate Overall Equipment Effectiveness (OEE).
+	 - **Orchestration:** Automate end-to-end workflows using CDF Workflows.
+	 - **Industrial Tools:** Visualize, explore, and analyze data with CDF’s suite of industrial applications.
 
 ---
 ## Few Missing Points to Consider 
-- **Module Selected should contain / in the end of module to capture everything, sometime space will not get created**
+- **Module Path:** Ensure the selected module ends with a / to capture all contents. Omitting the trailing slash may prevent space creation in some cases
+- **Connection.py:** The script failed in the documentation due to an incorrect URL. Please update it to use the email documentation link instead.
 ---
 
 ## 📦 Key Modules in This Repo
